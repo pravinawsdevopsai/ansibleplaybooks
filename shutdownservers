@@ -1,0 +1,8 @@
+---
+- name: Install and start the apche
+  hosts: all 
+  become: yes
+
+  tasks: 
+  - name: Stops servers
+    command: init 0
