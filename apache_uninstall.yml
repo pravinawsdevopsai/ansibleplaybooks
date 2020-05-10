@@ -1,0 +1,17 @@
+---
+- name: Install and start the apche
+  hosts: web
+  become: yes
+
+  tasks: 
+  - name: start the servive
+    service:
+        name=httpd
+        state=stopped
+
+  - name: Install the apache 
+    yum: 
+      name=httpd
+      state=absent
+
+
