@@ -1,15 +1,15 @@
 ---
-- name: Install and start the apche
+- name: uninstall and start the apche
   hosts: all 
   become: yes
 
   tasks: 
-  - name: start the servive
+  - name: Stop the servive
     service:
         name=httpd
         state=stopped
 
-  - name: Install the apache 
+  - name: uninstall the apache 
     yum: 
       name=httpd
       state=absent
