@@ -1,0 +1,4 @@
+- hosts: node5.lab.example.com,node6.lab.example.com
+  become: yes
+  roles:
+   - app-tier
