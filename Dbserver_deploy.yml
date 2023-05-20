@@ -1,4 +1,4 @@
-- hosts: db
+- hosts: node6.lab.example.com
   become: yes
   roles:
    - db-tier
