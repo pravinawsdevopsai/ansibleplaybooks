@@ -1,6 +1,6 @@
 ---
 - name: Install and start the apche
-  hosts: web
+  hosts: webservers
   become: yes
   
   tasks:
